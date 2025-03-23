@@ -1,62 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="styles/index.css">
-
-    <title>Priyanka Maletia</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><span style="color:red;">P</span><span style="color:white;">M</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html">Know me!</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name]'s Terminal Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span>Priyanka_</span>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="home">
-      <br>
-      <div class="thing">
-        <h1>Priyanka Maletia</h1>
-        <h3>Python Developer and Data Science Enthusiast</h3><br>
-        <p>
-          A Data Science enthusiast and Python Automation developer with an experience of web design and development to add the bling to everything! Trying to make life easy myself and fellow chaps on this earth, using tech as a medium. <br>
-          Check <b>Know Me!</b> page to know more about me. Also check <b>My Projects</b> page to check my projects. You can contact me on various social media accounts and my mail given in <b>Contact</b> page.
-        </p>
+  </header>
+
+  <div class="section">
+    <p>> Welcome to Priyanka's Terminal.</p>
+    <p>> Crafting scalable architectures & efficient solutions.</p>
+    <p class="blinking">> [Press any key to continue...]</p>
+  </div>
+
+  <div id="about" class="section">
+    <p>> About Me</p>
+    <hr />
+    <p>I'm [Your Name], a Solution Architect & Software Engineer with 6+ years experience designing scalable systems.</p>
+    <ul>
+      <li>- Python, FastAPI, Docker, Kubernetes</li>
+      <li>- Azure, RabbitMQ, Celery</li>
+      <li>- Architecting high-performance, fault-tolerant solutions</li>
+    </ul>
+    <p>When I'm not architecting backend systems, I enjoy solving logic puzzles and participating in hackathons.</p>
+    <p><a href="files/resume_priyanka_maletia.pdf">[View Resume]</a></p>
+  </div>
+
+  <div id="projects" class="section">
+    <p>> Projects</p>
+    <hr />
+    <div class="project" onclick="toggleDetails('p1')">
+      [01] Distributed Order Processing System
+      <div id="p1" class="project-details">
+        A high-throughput system using FastAPI, Celery, RabbitMQ, deployed on Kubernetes.
       </div>
     </div>
+    <div class="project" onclick="toggleDetails('p2')">
+      [02] Real-Time Analytics Dashboard
+      <div id="p2" class="project-details">
+        Integrated scalable ML models with streaming data. Reduced latency by 40%.
+      </div>
+    </div>
+    <div class="project" onclick="toggleDetails('p3')">
+      [03] Microservices Migration Strategy
+      <div id="p3" class="project-details">
+        Designed migration plan from monolith to microservices for a large enterprise system.
+      </div>
+    </div>
+  </div>
 
+  <div id="contact" class="section">
+    <p>> Contact Me</p>
+    <hr />
+    <p>Want to collaborate or have a project in mind?</p>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/pmaletia/</p>
+    <p>GitHub: https://github.com/pmaletia</p>
+  </div>
 
+  <footer>
+    <p>© 2025 Priyanka Maletia | Built with ❤️ using HTML, CSS, JS</p>
+  </footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
