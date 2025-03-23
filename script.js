@@ -8,4 +8,13 @@ function toggleDetails(id) {
     const blinking = document.querySelector('.blinking');
     if (blinking) blinking.style.display = 'none';
   });
+
+  document.addEventListener('keydown', () => {
+    const blinking = document.querySelector('.blinking');
+    if (blinking) blinking.style.display = 'none';
+  
+    const hiddenSection = document.getElementById('hiddenSection');
+    if (hiddenSection) hiddenSection.style.display = 'block';
+  });
+  
   
